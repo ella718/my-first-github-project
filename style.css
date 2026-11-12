@@ -1,0 +1,528 @@
+
+/* =========================================
+   ELLA MANDORIAO - PERSONAL PORTFOLIO
+   Theme: Soft Blush | Elegant | Professional
+========================================= */
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+/* =========================================
+   1. GENERAL STYLING
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #fcf8f7;
+    color: #514347;
+    line-height: 1.8;
+}
+
+:root {
+    --pink: #d9a6ad;
+    --dark-pink: #b87985;
+    --light-pink: #f7e9e9;
+    --cream: #fcf8f7;
+    --white: #ffffff;
+    --mauve: #765d65;
+    --text: #514347;
+    --border: #eee0e0;
+}
+
+
+/* =========================================
+   2. HEADER
+========================================= */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #f6e6e7,
+        #f9eeee,
+        #ead5d8
+    );
+
+    text-align: center;
+    padding: 75px 20px 65px;
+    color: var(--mauve);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--dark-pink);
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #8c7279;
+}
+
+header img {
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 25px;
+    box-shadow: 0 8px 25px rgba(120, 80, 90, 0.15);
+}
+
+
+/* =========================================
+   3. NAVIGATION
+========================================= */
+
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 17px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 12px rgba(100, 70, 80, 0.06);
+}
+
+nav a {
+    display: inline-block;
+    color: #80656d;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 13px;
+    margin: 2px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #b87985;
+    background-color: #f8ebec;
+    border-radius: 20px;
+}
+
+
+/* =========================================
+   4. HORIZONTAL DIVIDERS
+========================================= */
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #eee3e3;
+}
+
+
+/* =========================================
+   5. GENERAL SECTIONS
+========================================= */
+
+section {
+    background-color: #ffffff;
+    width: 85%;
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 40px;
+    border: 1px solid #f1e5e5;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(120, 80, 90, 0.045);
+    transition: 0.3s ease;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #765d65;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f0dada;
+}
+
+section h3 {
+    color: #b87985;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+section p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   6. ABOUT ME
+========================================= */
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.eyebrow {
+    color: #c18a95;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 245px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 6px solid #f8ebec;
+    box-shadow: 0 6px 18px rgba(120, 80, 90, 0.10);
+}
+
+.about-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.about-text p {
+    color: #76676c;
+    line-height: 2;
+}
+
+
+/* =========================================
+   7. TECHNICAL SKILLS
+========================================= */
+
+#skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+
+#skills li {
+    background-color: #fcf5f5;
+    border: 1px solid #f1e1e2;
+    border-left: 4px solid #d9a6ad;
+    border-radius: 8px;
+    padding: 13px 15px;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+#skills li:hover {
+    background-color: #f7e9e9;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(120, 80, 90, 0.07);
+}
+
+
+/* =========================================
+   8. EDUCATIONAL BACKGROUND
+========================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+th {
+    background-color: #ead5d8;
+    color: #765d65;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 16px;
+    text-align: left;
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #f0e4e4;
+    font-size: 13px;
+    color: #66575c;
+}
+
+tr:nth-child(even) {
+    background-color: #fcf7f7;
+}
+
+tr:hover {
+    background-color: #f8eeee;
+}
+
+
+/* =========================================
+   9. PROJECTS
+========================================= */
+
+#projects article {
+    background-color: #fcf7f7;
+    padding: 25px;
+    margin: 20px 0;
+    border: 1px solid #f0e2e2;
+    border-left: 5px solid #d9a6ad;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+#projects article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(120, 80, 90, 0.08);
+}
+
+#projects article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+#projects article p {
+    color: #76676c;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   10. CAREER GOALS
+========================================= */
+
+#goals ol {
+    padding-left: 25px;
+}
+
+#goals li {
+    padding: 12px 15px;
+    margin: 12px 0;
+    background-color: #fcf5f5;
+    border-radius: 8px;
+    border-left: 3px solid #d9a6ad;
+    font-size: 14px;
+    color: #66575c;
+}
+
+#goals li::marker {
+    color: #b87985;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   11. CONTACT
+========================================= */
+
+#contact a {
+    color: #b87985;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#contact a:hover {
+    color: #765d65;
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: inline-block;
+    color: #765d65;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 12px 0 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #eadada;
+    border-radius: 8px;
+    background-color: #fdfafa;
+    color: #514347;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #d9a6ad;
+    box-shadow: 0 0 0 3px rgba(217, 166, 173, 0.15);
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #bd8792;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 25px;
+    margin-top: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #986875;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(120, 80, 90, 0.15);
+}
+
+
+/* =========================================
+   12. FOOTER
+========================================= */
+
+footer {
+    background-color: #765d65;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 5px 0;
+    color: #f8e9eb;
+}
+
+
+/* =========================================
+   13. RESPONSIVE DESIGN
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 55px 15px;
+    }
+
+    header h1 {
+        font-size: 33px;
+    }
+
+    header h2 {
+        font-size: 17px;
+    }
+
+    nav {
+        padding: 10px 5px;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 7px 8px;
+    }
+
+    section {
+        width: 92%;
+        padding: 25px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-image img {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 15px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 22px auto;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    th, td {
+        padding: 7px;
+        overflow-wrap: anywhere;
+    }
+
+    button {
+        width: 100%;
+    }
+}
